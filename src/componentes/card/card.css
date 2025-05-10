@@ -1,0 +1,61 @@
+.producto {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+  backdrop-filter: blur(12px); /* Efecto vidrio */
+  border-radius: 16px;
+  border: 1px solid rgba(110, 142, 251, 0.3); /* Borde azul sutil */
+  padding: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 
+    0 8px 32px rgba(31, 38, 135, 0.15),
+    inset 0 0 12px rgba(167, 119, 227, 0.1); /* Sombra exterior + interior */
+}
+
+
+.producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.producto h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #1e293b;
+  font-size: 2rem;
+  margin: 0 0 8px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ciudad {
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  margin: 5px 0 15px;
+}
+
+.producto a {
+    text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  color: #6e8efb;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid rgba(110, 142, 251, 0.3);
+  transition: all 0.3s ease;
+}
+
+.producto a:hover {
+  background: white;
+  color: #a777e3;
+  box-shadow: 0 4px 12px rgba(110, 142, 251, 0.3);
+}

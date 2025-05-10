@@ -1,0 +1,91 @@
+/* Contenedor principal */
+.producto-main {
+  display: flex; 
+  flex-direction: column; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Galería de imágenes - Versión mejorada */
+.productos-img {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* Evita overflow */
+  gap: 100px;
+  align-items: start; /* Alinea las imágenes desde la parte superior */
+}
+
+/* Contenedor individual para control preciso */
+.productos-img div {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background: #f8f8f8;
+  aspect-ratio: 1/1; /* Proporción ideal para retratos */
+  display: flex;
+  justify-content: center;
+}
+
+.productos-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center; /* Enfoca en la parte superior */
+  transition: transform 0.5s ease;
+  border: 8px solid transparent;
+  border-radius: 10px;
+  background: 
+    linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, #6e8efb, #a777e3, #ff6b6b) border-box;
+  background-size: 200% 200%;
+  animation: gradient-border 4s ease infinite;
+  border-radius: 12px;
+}
+
+@keyframes gradient-border {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Efecto hover con zoom controlado */
+.productos-img div:hover img {
+  transform: scale(1.03);
+}
+
+/* Estilo para el botón */
+.regresar-a-lista {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.regresar-a-lista a {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(110, 142, 251, 0.4);
+}
+
+.regresar-a-lista a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(110, 142, 251, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .productos-img {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .productos-img div {
+    aspect-ratio: 2/3; /* Ratio más vertical en móviles */
+  }
+}

@@ -1,0 +1,43 @@
+.contenedro-productos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.regresar-home {
+    position: absolute;
+    bottom: 5px;
+    right: 200px;
+    display: inline-block; /* Para que no ocupe todo el ancho */
+    margin: 10px; /* Espacio alrededor del botón */
+  }
+  
+  .regresar-home a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: white;
+    color: #333; /* Color de texto oscuro para contraste */
+    text-decoration: none; /* Quita el subrayado del link */
+    font-family: 'Segoe UI', Roboto, sans-serif; /* Fuente moderna */
+    font-weight: 500; /* Grosor de la fuente */
+    font-size: 16px;
+    border: 2px solid #f0f0f0; /* Borde sutil */
+    border-radius: 6px; /* Esquinas ligeramente redondeadas */
+    transition: all 0.3s ease; /* Transición suave para efectos hover */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil para profundidad */
+    cursor: pointer; /* Cambia el cursor al pasar */
+  }
+  
+  .regresar-home a:hover {
+    background-color: #f8f8f8; /* Color ligeramente más oscuro al pasar */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Sombra más pronunciada al pasar */
+    transform: translateY(-2px); /* Efecto de levantar */
+  }
+  
+  .regresar-home a:active {
+    transform: translateY(0); /* Efecto de presionar */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
