@@ -34,28 +34,37 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.ciudad {
-  color: #ffffff;
-  padding: 4px 12px;
-  border-radius: 20px;
+.producto-detalles {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.producto-ciudad{
+  color: #a777e3;
   font-size: 1.5rem;
-  margin: 5px 0 15px;
 }
 
-.producto a {
+.producto button {
     text-align: center;
-  background: rgba(255, 255, 255, 0.9);
-  color: #6e8efb;
-  padding: 8px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  border: 2px solid rgba(110, 142, 251, 0.3);
-  transition: all 0.3s ease;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: 2px solid rgba(110, 142, 251, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.producto a:hover {
+.producto button:hover {
   background: white;
   color: #a777e3;
   box-shadow: 0 4px 12px rgba(110, 142, 251, 0.3);
+}
+
+.producto a{
+  text-decoration: none;
+  color: #6e8efb;
+  font-weight: 600;
 }

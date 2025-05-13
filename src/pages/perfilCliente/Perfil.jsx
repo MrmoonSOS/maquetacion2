@@ -2,12 +2,14 @@ import { Link } from "react-router-dom"
 import "./perfil.css"
 
 export default function Perfil() {
+  let cliente = JSON.parse(localStorage.getItem("cliente"))
+
   return (
     <main className="contenedor-perfil">
         <section className='info-cliente'>
             <div className="contenedor-foto-perfil">
-                <img className="foto-perfil" src="/perfiles/jack-el-destripador.jpg" alt="" />
-                <h3 className="nombre-perfil">Nombre</h3>
+                <img className="foto-perfil" src={cliente.img1} alt="" />
+                <h3 className="nombre-perfil">{cliente.nombre}</h3>
             </div>
             <p className="descripcion">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 

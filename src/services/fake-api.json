@@ -1,65 +1,156 @@
 {
-    "clientes": [
-      {
-        "id": "1",
-        "nombre": "Simon sempai",
-        "fotoperfil": "/perfiles/simon-uzumaki.jpg",
-        "ciudad": "caracas"
-      },
-      {
-        "id": "2",
-        "nombre": "Sergio oni-chan",
-        "fotoperfil": "/perfiles/sergio-saber.jpg",
-        "ciudad": "cali"
-      },
-      {
-        "id": "3",
-        "nombre": "Richi uzumaki",
-        "fotoperfil": "/perfiles/richi-hoshino.jpg",
-        "ciudad": "sincelejos"
-      },
-      {
-        "id": "4",
-        "nombre": "Andres Shinji",
-        "fotoperfil": "/perfiles/andres-shinji.jpg",
-        "descripcion": "medellin"
-      },
-      {
-        "id": "5",
-        "nombre": "Manuela Sailor",
-        "fotoperfil": "/perfiles/manuela-sailor.jpg",
-        "ciudad": "venezuela"
-      },
-      {
-        "id": "6",
-        "nombre": "Mariana Mikasa",
-        "fotoperfil": "/perfiles/mariana-mikasa.jpg",
-        "ciudad": "pueblo escondido"
-      },
-      {
-        "id": "7",
-        "nombre": "Santiago Goku",
-        "fotoperfil": "/perfiles/santiago-goku.jpg",
-        "ciudad": "barrancabermeja"
-      },
-      {
-        "id": "8",
-        "nombre": "Laura Light",
-        "fotoperfil": "/perfiles/laura-light.jpg",
-        "ciudad": "caracas"
-      },
-      {
-        "id": "9",
-        "nombre": "Sergio Kaneki",
-        "fotoperfil": "/perfiles/carlos-kaneki.jpg",
-        "ciudad": "choco"
-      },
-      {
-        "id": "10",
-        "nombre": "Simon Asuna",
-        "fotoperfil": "/perfiles/diana-asuna.jpg",
-        "ciudad": "Lorica"
-      }
+  "clientes": [
+    {
+      "id": "1",
+      "nombre": "simon",
+      "apellido": "sempai",
+      "img1": "/perfiles/perfil1.jpg",
+      "ciudad": "caracas"
+    },
+    {
+      "id": "2",
+      "nombre": "sergio",
+      "apellido": "oni-chan",
+      "img1": "/perfiles/perfil2.jpg",
+      "ciudad": "cali"
+    },
+    {
+      "id": "3",
+      "nombre": "richi",
+      "apellido": "uzumaki",
+      "img1": "/perfiles/perfil3.jpg",
+      "ciudad": "sincelejos"
+    },
+    {
+      "id": "4",
+      "nombre": "andres",
+      "apellido": "shinji",
+      "img1": "/perfiles/perfil4.jpg",
+      "ciudad": "medellin"
+    },
+    {
+      "id": "5",
+      "nombre": "manuela",
+      "apellido": "sailor",
+      "img1": "/perfiles/perfil5.jpg",
+      "ciudad": "venezuela"
+    },
+    {
+      "id": "6",
+      "nombre": "mariana",
+      "apellido": "mikasa",
+      "img1": "/perfiles/perfil6.jpg",
+      "ciudad": "pueblo perdido"
+    },
+    {
+      "id": "7",
+      "nombre": "santiago",
+      "apellido": "goku",
+      "img1": "/perfiles/perfil7.jpg",
+      "ciudad": "barrancabermeja"
+    },
+    {
+      "id": "8",
+      "nombre": "laura",
+      "apellido": "light",
+      "img1": "/perfiles/perfil8.jpg",
+      "ciudad": "caracas"
+    },
+    {
+      "id": "9",
+      "nombre": "carlos",
+      "apellido": "kaneki",
+      "img1": "/perfiles/perfil9.jpg",
+      "ciudad": "choco"
+    },
+    {
+      "id": "10",
+      "nombre": "simon",
+      "apellido": "asuna",
+      "img1": "/perfiles/perfil10.jpeg",
+      "ciudad": "Lorica"
+    }
   ],
-  "productos": []
+  "productos": [
+      {
+        "id": 1,
+        "nombre": "Rem",
+        "ciudad": "Bogotá",
+        "img1": "/productos/producto1/rem-1.jpg",
+        "img2":"/productos/producto1/rem-2.jpg",
+        "precio": 129.99
+      },
+      {
+        "id": 2,
+        "nombre": "Ram",
+        "ciudad": "Bogotá",
+        "img1": "/productos/producto2/ram-2.jpg",
+        "img2":"/productos/producto2/ram-1.jpg",
+        "precio": 129.99
+      },
+      {
+        "id": 3,
+        "nombre": "Rem y Ram",
+        "ciudad": "Bogotá",
+        "img1": "/productos/producto3/remyram-1.jpg",
+        "img2":"/productos/producto3/remyram-2.jpg",
+        "precio": 200
+      },
+      {
+        "id": 4,
+        "nombre": "Emilia",
+        "ciudad": "Bogotá",
+        "img1": "/productos/producto4/emilia-1.jpg",
+        "img2":"/productos/producto4/emilia-2.jpg",
+        "precio": 119.99
+      },
+      {
+        "id": 5,
+        "nombre": "Megumin",
+        "ciudad": "Bogotá",
+        "img1": "/productos/producto5/megumin-1.jpg",
+        "img2":"/productos/producto5/megumin-2.jpg",
+        "precio": 149.99
+      },
+      {
+        "id": 6,
+        "nombre": "Gura",
+        "ciudad": "Bogotá",
+        "img1": "/productos/producto6/gura-1.jpg",
+        "img2":"/productos/producto6/gura-2.jpg",
+        "precio": 129.99
+      },
+      {
+        "id": 7,
+        "nombre": "Chika",
+        "ciudad": "Bogotá",
+        "img1": "/productos/producto7/chika-1.jpg",
+        "img2":"/productos/producto7/chika-2.jpg",
+        "precio": 99.99
+      },
+      {
+        "id": 8,
+        "nombre": "Kanna",
+        "ciudad": "Bogotá",
+        "img1": "/productos/producto8/kanna-1.jpg",
+        "img2":"/productos/producto8/kanna-2.jpg",
+        "precio": 99.99
+      },
+      {
+        "id": 9,
+        "nombre": "Senko",
+        "ciudad": "Bogotá",
+        "img1": "/productos/producto9/senko-1.jpg",
+        "img2":"/productos/producto9/senko-2.jpg",
+        "precio": 119.99
+      },
+      {
+        "id": 10,
+        "nombre": "Takanashi",
+        "ciudad": "Bogotá",
+        "img1": "/productos/producto10/takanashi-1.jpg",
+        "img2":"/productos/producto10/takanashi-2.jpg",
+        "precio": 149.99
+      }
+    ]
 }

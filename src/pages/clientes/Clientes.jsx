@@ -1,23 +1,11 @@
-import Card from '../../componentes/card/Card'
-import { Link } from 'react-router-dom'
-import "./clientes.css"
+import ClientesProductos from "../../componentes/clientesProductos/ClientesProductos";
+let apiClientes = "http://localhost:3001/clientes";
+import "./clientes.css";
 
 export default function Clientes() {
   return (
-    <main className='contenedro-clientes'>
-        <Card nombre="simon" img="/perfiles/jack-el-destripador.jpg" ciudad="Caracas" direccion="/perfil"/>
-        <Card nombre="simon" img="/perfiles/jack-el-destripador.jpg" ciudad="Caracas" direccion="/perfil"/>
-        <Card nombre="simon" img="/perfiles/jack-el-destripador.jpg" ciudad="Caracas" direccion="/perfil"/>
-        <Card nombre="simon" img="/perfiles/jack-el-destripador.jpg" ciudad="Caracas" direccion="/perfil"/>
-        <Card nombre="simon" img="/perfiles/jack-el-destripador.jpg" ciudad="Caracas" direccion="/perfil"/>
-        <Card nombre="simon" img="/perfiles/jack-el-destripador.jpg" ciudad="Caracas" direccion="/perfil"/>
-        <Card nombre="simon" img="/perfiles/jack-el-destripador.jpg" ciudad="Caracas" direccion="/perfil"/>
-        <Card nombre="simon" img="/perfiles/jack-el-destripador.jpg" ciudad="Caracas" direccion="/perfil"/>
-        <Card nombre="simon" img="/perfiles/jack-el-destripador.jpg" ciudad="Caracas" direccion="/perfil"/>
-        <Card nombre="simon" img="/perfiles/jack-el-destripador.jpg" ciudad="Caracas" direccion="/perfil"/>
-        <div className='regresar-home'>
-            <Link to="/">Home</Link>
-        </div>
+    <main className="contenedor-clientes">
+      <ClientesProductos api={apiClientes} redireccion="/perfil"/>
     </main>
-  )
+  );
 }
