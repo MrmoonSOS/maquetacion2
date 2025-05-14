@@ -38,7 +38,7 @@
   border-radius: 10px;
   background: 
     linear-gradient(white, white) padding-box,
-    linear-gradient(135deg, #6e8efb, #a777e3, #ff6b6b) border-box;
+    linear-gradient(135deg, #fb6e6e, #fb0000, #ff6b6b) border-box;
   background-size: 200% 200%;
   animation: gradient-border 4s ease infinite;
   border-radius: 12px;
@@ -64,18 +64,18 @@
 .regresar-a-lista a {
   display: inline-block;
   padding: 12px 30px;
-  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  background: linear-gradient(135deg, #fb6e6e, #ff0000);
   color: white;
   text-decoration: none;
   border-radius: 30px;
   font-weight: 500;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(110, 142, 251, 0.4);
+  box-shadow: 0 4px 15px rgba(234, 61, 61, 0.4);
 }
 
 .regresar-a-lista a:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(110, 142, 251, 0.6);
+  box-shadow: 0 6px 20px rgb(137, 38, 38);
 }
 
 /* Responsive Design */

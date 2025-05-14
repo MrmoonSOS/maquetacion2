@@ -2,14 +2,14 @@ import { Link } from "react-router-dom"
 import "./perfil.css"
 
 export default function Perfil() {
-  let cliente = JSON.parse(localStorage.getItem("cliente"))
+  let comic = JSON.parse(localStorage.getItem("comic"))
 
   return (
     <main className="contenedor-perfil">
-        <section className='info-cliente'>
+        <section className='info-comic'>
             <div className="contenedor-foto-perfil">
-                <img className="foto-perfil" src={cliente.img1} alt="" />
-                <h3 className="nombre-perfil">{cliente.nombre}</h3>
+                <img className="foto-perfil" src={comic.img1} alt="" />
+                <h3 className="nombre-perfil">{comic.nombre}</h3>
             </div>
             <p className="descripcion">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -23,7 +23,7 @@ export default function Perfil() {
             </p>
         </section>
         <section className="regresar-a-lista">
-          <Link to="/clientes">Listado Clientes</Link>
+          <Link to="/comics">Listado comics</Link>
         </section>
 
     </main>

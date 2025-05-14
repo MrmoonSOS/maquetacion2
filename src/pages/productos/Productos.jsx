@@ -1,4 +1,4 @@
-import ClientesProductos from "../../componentes/clientesProductos/ClientesProductos";
+import ClientesProductos from "../../componentes/comicsProductos/ComicsProductos";
 let apiProductos = "http://localhost:3001/productos";
 import "./productos.css";
 

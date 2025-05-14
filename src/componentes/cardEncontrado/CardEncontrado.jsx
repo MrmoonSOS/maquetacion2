@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-let apiClientes = "http://localhost:3001/clientes";
+let apiComics = "http://localhost:3001/comics";
 let apiProductos = "http://localhost:3001/productos"
 import "./cardEncontrado.css";
 export default function CardEncontrado({ nombre, img, apellido, id, redireccion }) {
-  const [clientes, setClientes] = useState([]);
+  const [comics , setComic] = useState([]);
   const [productos, setProductos] = useState([]);
 
   function getProductos() {
@@ -17,20 +17,20 @@ export default function CardEncontrado({ nombre, img, apellido, id, redireccion 
     getProductos();
   }, []);
 
-  function getClientes() {
-    fetch(apiClientes)
+  function getComic() {
+    fetch(apiComics)
       .then((response) => response.json())
-      .then((data) => setClientes(data))
+      .then((data) => setComic(data))
       .catch((error) => console.log(error));
   }
   useEffect(() => {
-    getClientes();
+    getComic();
   }, []);
 
-  function buscarCliente() {
-    let cliente = clientes.find(
-      (cliente) => id == cliente.id );
-    return cliente;
+  function buscarComic() {
+    let comic = comics.find(
+      (comic) => id == comic.id );
+    return comic;
   }
 
   function buscarProductos() {
@@ -39,10 +39,10 @@ export default function CardEncontrado({ nombre, img, apellido, id, redireccion 
     return producto;
   }
 
-  const guardarClienteProductoEnLocalStorage = () => {
+  const guardarComicProductoEnLocalStorage = () => {
     try {
       if (redireccion == "/perfil") {
-        localStorage.setItem("cliente", JSON.stringify(buscarCliente()));
+        localStorage.setItem("comic", JSON.stringify(buscarComic()));
         console.log(`ID ${id} guardado en localStorage cliente`);
       }else{
         localStorage.setItem("producto", JSON.stringify(buscarProductos()));
@@ -63,7 +63,7 @@ export default function CardEncontrado({ nombre, img, apellido, id, redireccion 
           </h3>
         </section>
         <section className="boton">
-          <button onClick={guardarClienteProductoEnLocalStorage}>
+          <button onClick={guardarComicProductoEnLocalStorage}>
             <Link to={redireccion}>Ver</Link>
           </button>
         </section>

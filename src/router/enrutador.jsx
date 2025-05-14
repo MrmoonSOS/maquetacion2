@@ -1,7 +1,7 @@
-import BuscarCliente from "../pages/buscarCliente/BuscarCliente"
+import BuscarCliente from "../pages/buscarCliente/BuscarComic"
 import BuscarProducto from "../pages/buscarProducto/BuscarProducto"
 import Productos from "../pages/productos/Productos"
-import Clientes from "../pages/clientes/Clientes"
+import Clientes from "../pages/clientes/Comics"
 import Perfil from "../pages/perfilCliente/Perfil"
 import VistaProducto from "../pages/vistaProducto/VistaProducto"
 export let enrutador = [
@@ -18,7 +18,7 @@ export let enrutador = [
         element: <Productos />
     },
     {
-        path: '/clientes',
+        path: '/comics',
         element: <Clientes />
     },
     {

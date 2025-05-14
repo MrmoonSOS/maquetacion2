@@ -64,7 +64,7 @@ export default function BuscarProducto() {
         <p className="signup-link">
           <Link to="/" className="signup-link link">
             {" "}
-            Buscar Cliente
+            Buscar Comic
           </Link>
         </p>
       </section>

@@ -1,156 +1,126 @@
 {
-  "clientes": [
+  "comics": [
     {
       "id": "1",
-      "nombre": "simon",
-      "apellido": "sempai",
-      "img1": "/perfiles/perfil1.jpg",
-      "ciudad": "caracas"
+      "nombre": "SPIDERVERSE VS VENOMVERSE",
+      "apellido": "SPIDERVERSE",
+      "img1": "/public/perfiles/clean.jpg",
+      "ciudad": "MARVEL"
     },
     {
       "id": "2",
-      "nombre": "sergio",
-      "apellido": "oni-chan",
-      "img1": "/perfiles/perfil2.jpg",
-      "ciudad": "cali"
+      "nombre": "GODZILLA VS XMEN",
+      "apellido": "GODZILLA",
+      "img1": "/public/perfiles/clean (1).jpg",
+      "ciudad": "MARVEL"
     },
     {
       "id": "3",
-      "nombre": "richi",
-      "apellido": "uzumaki",
-      "img1": "/perfiles/perfil3.jpg",
-      "ciudad": "sincelejos"
+      "nombre": "HELLVERINE",
+      "apellido": "WOLVERINE",
+      "img1": "/public/perfiles/clean (2).jpg",
+      "ciudad": "MARVEL"
     },
     {
       "id": "4",
-      "nombre": "andres",
-      "apellido": "shinji",
-      "img1": "/perfiles/perfil4.jpg",
-      "ciudad": "medellin"
+      "nombre": "RED HULK",
+      "apellido": "HULK",
+      "img1": "/public/perfiles/clean (3).jpg",
+      "ciudad": "MARVEL"
     },
     {
       "id": "5",
-      "nombre": "manuela",
-      "apellido": "sailor",
-      "img1": "/perfiles/perfil5.jpg",
-      "ciudad": "venezuela"
+      "nombre": "PHOENIX",
+      "apellido": "JEAN GREY",
+      "img1": "/public/perfiles/clean (4).jpg",
+      "ciudad": "MARVEL"
     },
     {
       "id": "6",
-      "nombre": "mariana",
-      "apellido": "mikasa",
-      "img1": "/perfiles/perfil6.jpg",
-      "ciudad": "pueblo perdido"
+      "nombre": "GWENPOOL",
+      "apellido": "GWEN",
+      "img1": "/public/perfiles/clean (5).jpg",
+      "ciudad": "MARVEL"
     },
     {
       "id": "7",
-      "nombre": "santiago",
-      "apellido": "goku",
-      "img1": "/perfiles/perfil7.jpg",
-      "ciudad": "barrancabermeja"
+      "nombre": "FANTASTIC FOUR",
+      "apellido": "FANTASTIC",
+      "img1": "/public/perfiles/clean (6).jpg",
+      "ciudad": "MARVEL"
     },
     {
       "id": "8",
-      "nombre": "laura",
-      "apellido": "light",
-      "img1": "/perfiles/perfil8.jpg",
-      "ciudad": "caracas"
-    },
-    {
-      "id": "9",
-      "nombre": "carlos",
-      "apellido": "kaneki",
-      "img1": "/perfiles/perfil9.jpg",
-      "ciudad": "choco"
-    },
-    {
-      "id": "10",
-      "nombre": "simon",
-      "apellido": "asuna",
-      "img1": "/perfiles/perfil10.jpeg",
-      "ciudad": "Lorica"
+      "nombre": "DR DOOM",
+      "apellido": "DOOM",
+      "img1": "/public/perfiles/clean (7).jpg",
+      "ciudad": "MARVEL"
     }
   ],
   "productos": [
       {
         "id": 1,
-        "nombre": "rem",
+        "nombre": "SCARECROW",
         "ciudad": "Bogotá",
-        "img1": "/productos/producto1/rem-1.jpg",
-        "img2":"/productos/producto1/rem-2.jpg",
+        "img1": "/public/productos/producto1/figura-scarecrow-20-mm-batman-begins.jpg",
+        "img2":"/public/productos/producto1/figura-scarecrow-20-mm-batman-begins (1).jpg",
         "precio": 129.99
       },
       {
         "id": 2,
-        "nombre": "ram",
+        "nombre": "SPIDERMAN",
         "ciudad": "Bogotá",
-        "img1": "/productos/producto2/ram-2.jpg",
-        "img2":"/productos/producto2/ram-1.jpg",
+        "img1": "/public/productos/producto2/3f115h3n1c.webp",
+        "img2":"/public/productos/producto2/5s4o1t504b.webp",
         "precio": 129.99
       },
       {
         "id": 3,
-        "nombre": "rem y ram",
+        "nombre": "SHARK",
         "ciudad": "Bogotá",
-        "img1": "/productos/producto3/remyram-1.jpg",
-        "img2":"/productos/producto3/remyram-2.jpg",
+        "img1": "/public/productos/producto3/0000000000_3ddce42c-0343-41da-b17e-fd0aa2dfc79f.webp",
+        "img2":"/public/productos/producto3/0000000000_968fe191-0aba-490b-adeb-6659a2365cc5.webp",
         "precio": 200
       },
       {
         "id": 4,
-        "nombre": "emilia",
+        "nombre": "DEADPOOL Y WOLVERINE",
         "ciudad": "Bogotá",
-        "img1": "/productos/producto4/emilia-1.jpg",
-        "img2":"/productos/producto4/emilia-2.jpg",
+        "img1": "/public/productos/producto4/l6i1r6p6b6.webp",
+        "img2":"/public/productos/producto4/0000000000_2e46a4b3-838b-4a34-962d-2e8c32020d37.webp",
         "precio": 119.99
       },
       {
         "id": 5,
-        "nombre": "megumin",
+        "nombre": "DEADPOOL",
         "ciudad": "Bogotá",
-        "img1": "/productos/producto5/megumin-1.jpg",
-        "img2":"/productos/producto5/megumin-2.jpg",
+        "img1": "/public/productos/producto5/5k59346f41.webp",
+        "img2":"/public/productos/producto5/493m06r5l3.webp",
         "precio": 149.99
       },
       {
         "id": 6,
-        "nombre": "gura",
+        "nombre": "DARKDAZZLER",
         "ciudad": "Bogotá",
-        "img1": "/productos/producto6/gura-1.jpg",
-        "img2":"/productos/producto6/gura-2.jpg",
+        "img1": "/public/productos/producto6/6t1k6v4ls5.webp",
+        "img2":"/public/productos/producto6/6k3s5j5t34.webp",
         "precio": 129.99
       },
       {
         "id": 7,
-        "nombre": "chika",
+        "nombre": "DEADPOOL",
         "ciudad": "Bogotá",
-        "img1": "/productos/producto7/chika-1.jpg",
-        "img2":"/productos/producto7/chika-2.jpg",
+        "img1": "/public/productos/producto7/49601c2p49.webp",
+        "img2":"/public/productos/producto7/4l7s3m6933.webp",
         "precio": 99.99
       },
       {
         "id": 8,
-        "nombre": "kanna",
+        "nombre": "SPIDERMAN",
         "ciudad": "Bogotá",
-        "img1": "/productos/producto8/kanna-1.jpg",
-        "img2":"/productos/producto8/kanna-2.jpg",
+        "img1": "/public/productos/producto8/6kq5b133p4.webp",
+        "img2":"/public/productos/producto8/7v5o4p2438.webp",
         "precio": 99.99
-      },
-      {
-        "id": 9,
-        "nombre": "senko",
-        "ciudad": "Bogotá",
-        "img1": "/productos/producto9/senko-1.jpg",
-        "img2":"/productos/producto9/Senko-2.jpg",
-        "precio": 119.99
-      },
-      {
-        "id": 10,
-        "nombre": "takanashi",
-        "ciudad": "Bogotá",
-        "img1": "/productos/producto10/takanashi-1.jpg",
-        "img2":"/productos/producto10/takanashi-2.jpg",
-        "precio": 149.99
       }
     ]
 }
