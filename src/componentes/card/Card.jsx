@@ -12,6 +12,17 @@ export default function Card({
   id,
 }) {
   const [clientes, setClientes] = useState([]);
+  const [productos, setProductos] = useState([]);
+
+  function getProductos() {
+    fetch(api)
+      .then((response) => response.json())
+      .then((data) => setProductos(data))
+      .catch((error) => console.log(error));
+  }
+  useEffect(() => {
+    getProductos();
+  }, []);
 
   function getClientes() {
     fetch(api)
@@ -24,14 +35,26 @@ export default function Card({
   }, []);
 
   function buscarCliente() {
-    let cliente = clientes.find((cliente) => id == cliente.id);
+    let cliente = clientes.find(
+      (cliente) => id == cliente.id );
     return cliente;
   }
 
-  const guardarClienteEnLocalStorage = () => {
+  function buscarProductos() {
+    let producto = productos.find(
+      (producto) => id == producto.id );
+    return producto;
+  }
+
+  const guardarClienteProductoEnLocalStorage = () => {
     try {
-      localStorage.setItem("cliente", JSON.stringify(buscarCliente()));
-      console.log(`ID ${id} guardado en localStorage`);
+      if (redireccion == "/perfil") {
+        localStorage.setItem("cliente", JSON.stringify(buscarCliente()));
+        console.log(`ID ${id} guardado en localStorage cliente`);
+      }else{
+        localStorage.setItem("producto", JSON.stringify(buscarProductos()));
+        console.log(`ID ${id} guardado en localStorage producto`);
+      }
     } catch (error) {
       console.error("Error al guardar en localStorage:", error);
     }
@@ -55,7 +78,7 @@ export default function Card({
         )}
       </div>
       <Link to={redireccion}>
-        <button onClick={guardarClienteEnLocalStorage}>Ver</button>
+        <button onClick={guardarClienteProductoEnLocalStorage}>Ver</button>
       </Link>
     </div>
   );

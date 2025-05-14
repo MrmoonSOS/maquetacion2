@@ -33,7 +33,7 @@ export default function ClientesProductos({api, redireccion}) {
       ))}
       </section>
       <div className="regresar-home">
-        <Link to="/">Home</Link>
+        <Link to={redireccion == "/perfil" ? "/": "/buscar-producto"}>Home</Link>
       </div>
     </>
   );

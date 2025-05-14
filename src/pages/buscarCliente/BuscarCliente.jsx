@@ -29,7 +29,6 @@ export default function BuscarCliente() {
   function mostrarClientesEncontrados() {
     setbuscoClientes(true)
   }
-
   return (
     <main className="contenedor">
       <section className="form-container">
@@ -73,6 +72,7 @@ export default function BuscarCliente() {
                   img={clienteEncontrado.img1}
                   apellido={clienteEncontrado.apellido}
                   id={clienteEncontrado.id}
+                  redireccion="/perfil"
                 />
               </section>
             ))
